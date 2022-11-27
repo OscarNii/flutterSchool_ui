@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:school_ui/videos/course1.dart';
 
 class Nextpage1 extends StatefulWidget {
@@ -15,7 +16,9 @@ class _Nextpage1State extends State<Nextpage1> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Favourite Videos'),
+        title: Text(
+          'Favourite Videos',
+        ),
         backgroundColor: Color.fromARGB(255, 47, 130, 127),
         actions: [
           Padding(
@@ -219,6 +222,46 @@ class _Nextpage1State extends State<Nextpage1> {
               SizedBox(height: 5),
               Course1(),
             ],
+          ),
+        ],
+      ),
+      bottomNavigationBar: GNav(
+        color: Colors.white,
+        activeColor: Colors.black,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        backgroundColor: Color.fromARGB(72, 158, 158, 158),
+        padding: EdgeInsets.all(20.0),
+        rippleColor: Colors.red,
+        tabs: [
+          GButton(
+            icon: Icons.home,
+            text: 'Home',
+            textColor: Colors.black,
+            iconColor: Colors.black,
+          ),
+          GButton(
+            icon: Icons.play_circle,
+            text: 'Courses',
+            textColor: Colors.black,
+            iconColor: Colors.black,
+          ),
+          GButton(
+            icon: Icons.shopping_cart,
+            text: 'Cart',
+            textColor: Colors.black,
+            iconColor: Colors.black,
+          ),
+          GButton(
+            icon: Icons.favorite,
+            text: 'Favorite',
+            textColor: Colors.black,
+            iconColor: Colors.black,
+          ),
+          GButton(
+            icon: Icons.person,
+            text: 'Profile',
+            textColor: Colors.black,
+            iconColor: Colors.black,
           ),
         ],
       ),
