@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:school_ui/videos/course1.dart';
+import 'package:school_ui/videos/course2.dart';
 import 'package:school_ui/videos/design1.dart';
 import 'package:school_ui/videos/design2.dart';
 import 'package:school_ui/videos/design3.dart';
@@ -137,7 +138,7 @@ class Home extends StatelessWidget {
             children: [
               Course1(),
               SizedBox(height: 5),
-              Course1(),
+              Course2(),
               SizedBox(height: 5),
               Course1(),
               SizedBox(height: 5),
