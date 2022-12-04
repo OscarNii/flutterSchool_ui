@@ -129,7 +129,8 @@ class View2 extends StatelessWidget {
                         onPrimary: Color.fromARGB(255, 47, 130, 127),
 
                         shadowColor: Colors.grey,
-                        side: BorderSide(color: Colors.white, width: 2),
+                        side: BorderSide(
+                            color: Color.fromARGB(255, 47, 130, 127), width: 2),
                         shape: StadiumBorder(),
                         //alignment: Alignment.center
                       ),

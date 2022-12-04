@@ -11,7 +11,9 @@ import 'package:school_ui/videos/view1.dart';
 import 'package:school_ui/videos/view2.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    const MyApp(),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -226,53 +228,57 @@ class Home extends StatelessWidget {
     return SafeArea(
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+        child: Stack(
           children: [
-            Row(
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                CircleAvatar(
-                  radius: 32,
-                  backgroundImage: AssetImage("assets/11.JPG"),
-                  backgroundColor: Colors.transparent,
-                ),
-                SizedBox(width: 250),
                 Row(
                   children: [
                     CircleAvatar(
-                      backgroundColor: Colors.white,
-                      child: Icon(
-                        Icons.shopping_cart_rounded,
-                        color: Color.fromARGB(255, 47, 130, 127),
-                      ),
+                      radius: 32,
+                      backgroundImage: AssetImage("assets/11.JPG"),
+                      backgroundColor: Colors.transparent,
                     ),
-                    Divider(indent: 10),
-                    CircleAvatar(
-                      backgroundColor: Colors.white,
-                      child: Icon(
-                        Icons.notification_add,
-                        color: Color.fromARGB(255, 47, 130, 127),
-                      ),
-                    )
+                    SizedBox(width: 250),
+                    Row(
+                      children: [
+                        CircleAvatar(
+                          backgroundColor: Colors.white,
+                          child: Icon(
+                            Icons.shopping_cart_rounded,
+                            color: Color.fromARGB(255, 47, 130, 127),
+                          ),
+                        ),
+                        Divider(indent: 10),
+                        CircleAvatar(
+                          backgroundColor: Colors.white,
+                          child: Icon(
+                            Icons.notification_add,
+                            color: Color.fromARGB(255, 47, 130, 127),
+                          ),
+                        ),
+                      ],
+                    ),
                   ],
-                )
+                ),
+                SizedBox(height: 15),
+                Text(
+                  'Hello Lady',
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
+                SizedBox(height: 5),
+                Text(
+                  'Lets start Learning',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 15,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ],
-            ),
-            SizedBox(height: 15),
-            Text(
-              'Hello Lady',
-              style: TextStyle(
-                color: Colors.white,
-              ),
-            ),
-            SizedBox(height: 5),
-            Text(
-              'Lets start Learning',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 15,
-                fontWeight: FontWeight.bold,
-              ),
             ),
           ],
         ),
