@@ -215,7 +215,7 @@ class Home extends StatelessWidget {
       borderRadius: BorderRadius.vertical(),
       gradient: LinearGradient(
         colors: [
-          Color.fromARGB(255, 47, 130, 127),
+          Color.fromARGB(154, 255, 0, 0),
           Color.fromARGB(255, 47, 130, 127),
         ],
         begin: Alignment.topCenter,
