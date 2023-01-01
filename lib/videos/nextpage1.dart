@@ -19,7 +19,7 @@ class _Nextpage1State extends State<Nextpage1> {
         title: Text(
           'Favourite Videos',
         ),
-        backgroundColor: Color.fromARGB(255, 47, 130, 127),
+        backgroundColor: Color.fromARGB(255, 0, 0, 0),
         actions: [
           Padding(
             padding: const EdgeInsets.all(10.0),
