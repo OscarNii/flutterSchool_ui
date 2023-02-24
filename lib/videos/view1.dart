@@ -15,7 +15,11 @@ class View1 extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 7, vertical: 5),
       margin: EdgeInsets.only(right: 7, top: 5),
       decoration: BoxDecoration(
-          color: Colors.transparent, borderRadius: BorderRadius.circular(25)),
+          gradient: LinearGradient(colors: [
+            Color.fromARGB(172, 0, 0, 0),
+            Color.fromARGB(148, 47, 130, 127),
+          ]),
+          borderRadius: BorderRadius.circular(25)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -70,11 +74,11 @@ class View1 extends StatelessWidget {
           SizedBox(height: 10),
           Text(
             'Affrodance: Designing intutive',
-            style: TextStyle(fontSize: 17),
+            style: TextStyle(color: Colors.white, fontSize: 17),
           ),
           Text(
             'user interface.',
-            style: TextStyle(fontSize: 17),
+            style: TextStyle(color: Colors.white, fontSize: 17),
           ),
           SizedBox(height: 10),
           Row(
@@ -86,9 +90,7 @@ class View1 extends StatelessWidget {
               ),
               Text(
                 'Created by Belmont Owen',
-                style: TextStyle(
-                  fontSize: 17,
-                ),
+                style: TextStyle(fontSize: 17, color: Colors.white),
               ),
             ],
           ),
@@ -98,13 +100,19 @@ class View1 extends StatelessWidget {
               Text(
                 NumberFormat.simpleCurrency(locale: 'en-us', decimalDigits: 2)
                     .format(150.00),
-                style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 17,
+                    fontWeight: FontWeight.bold),
               ),
               SizedBox(width: 15),
               Text(
                 NumberFormat.simpleCurrency(locale: 'en-us', decimalDigits: 2)
                     .format(150.00),
-                style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal),
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 14,
+                    fontWeight: FontWeight.normal),
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 70.0),
