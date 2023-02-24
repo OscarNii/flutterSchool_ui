@@ -48,7 +48,7 @@ class _Nextpage1State extends State<Nextpage1> {
                         fontSize: 19,
                       ),
                     ),
-                    SizedBox(width: 210),
+                    SizedBox(width: 190),
                     Text(
                       'View all',
                       style: TextStyle(
@@ -138,7 +138,7 @@ class _Nextpage1State extends State<Nextpage1> {
                                 ),
                                 SizedBox(width: 20),
                                 Padding(
-                                  padding: const EdgeInsets.only(left: 100.0),
+                                  padding: const EdgeInsets.only(left: 90.0),
                                   child: Stack(
                                     children: [
                                       ElevatedButton(
