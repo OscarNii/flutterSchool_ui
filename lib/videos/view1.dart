@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:school_ui/videos/nextpage1.dart';
+import 'package:animate_do/animate_do.dart';
 
 class View1 extends StatelessWidget {
   const View1({Key? key}) : super(key: key);
@@ -15,55 +16,58 @@ class View1 extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 7, vertical: 5),
       margin: EdgeInsets.only(right: 7, top: 5),
       decoration: BoxDecoration(
-          color: Colors.transparent, borderRadius: BorderRadius.circular(25)),
+          color: Color.fromARGB(233, 247, 196, 237),
+          borderRadius: BorderRadius.circular(25)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Container(
-            height: 250,
-            width: 300,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(14),
-              image: DecorationImage(
-                  image: AssetImage('assets/2.jpeg'), fit: BoxFit.fill),
-            ),
-            child: Padding(
-              padding: const EdgeInsets.all(10.0),
-              child: Stack(
-                alignment: Alignment.bottomLeft,
-                children: [
-                  ElevatedButton(
-                    child: Row(
-                      children: [
-                        Text(
-                          ' 10 Videos',
-                          style: TextStyle(color: Colors.black),
-                        ),
-                      ],
-                    ),
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => Nextpage1(),
-                          ));
-                    },
-                    style: ElevatedButton.styleFrom(
-                      padding: EdgeInsets.all(15.0),
-                      fixedSize: Size(130, 50),
-                      textStyle: TextStyle(
-                        fontSize: 18,
+          FadeInUp(
+            child: Container(
+              height: 250,
+              width: 300,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(14),
+                image: DecorationImage(
+                    image: AssetImage('assets/2.jpeg'), fit: BoxFit.fill),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Stack(
+                  alignment: Alignment.bottomLeft,
+                  children: [
+                    ElevatedButton(
+                      child: Row(
+                        children: [
+                          Text(
+                            ' 10 Videos',
+                            style: TextStyle(color: Colors.black),
+                          ),
+                        ],
                       ),
-                      primary: Color.fromARGB(211, 244, 240, 240),
-                      onPrimary: Color.fromARGB(255, 47, 130, 127),
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => Nextpage1(),
+                            ));
+                      },
+                      style: ElevatedButton.styleFrom(
+                        padding: EdgeInsets.all(15.0),
+                        fixedSize: Size(130, 50),
+                        textStyle: TextStyle(
+                          fontSize: 18,
+                        ),
+                        primary: Color.fromARGB(211, 244, 240, 240),
+                        onPrimary: Color.fromARGB(255, 47, 130, 127),
 
-                      shadowColor: Colors.grey,
-                      side: BorderSide(color: Colors.white, width: 2),
-                      shape: StadiumBorder(),
-                      //alignment: Alignment.center
-                    ),
-                  )
-                ],
+                        shadowColor: Colors.grey,
+                        side: BorderSide(color: Colors.white, width: 2),
+                        shape: StadiumBorder(),
+                        //alignment: Alignment.center
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
           ),

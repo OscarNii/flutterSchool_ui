@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:school_ui/videos/course1.dart';
@@ -38,6 +39,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: _appbar(),
+      backgroundColor: Colors.white,
       body: ListView(
         children: [
           SizedBox(
@@ -96,14 +98,19 @@ class Home extends StatelessWidget {
           SizedBox(height: 10),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
-            child: Row(
-              children: [
-                View1(),
-                SizedBox(height: 10),
-                View2(),
-                SizedBox(height: 10),
-                View1(),
-              ],
+            child: FadeInUpBig(
+              animate: true,
+              child: Row(
+                children: [
+                  View1(),
+                  SizedBox(height: 10),
+                  View2(),
+                  SizedBox(height: 10),
+                  View1(),
+                  SizedBox(height: 10),
+                  View2(),
+                ],
+              ),
             ),
           ),
           SizedBox(height: 5),
@@ -215,8 +222,8 @@ class Home extends StatelessWidget {
       borderRadius: BorderRadius.vertical(),
       gradient: LinearGradient(
         colors: [
-          Color.fromARGB(255, 0, 0, 0),
-          Color.fromARGB(255, 47, 130, 127),
+          Colors.white,
+          Color.fromARGB(149, 255, 2, 204),
         ],
         begin: Alignment.topCenter,
         end: Alignment.bottomCenter,
@@ -247,7 +254,7 @@ class Home extends StatelessWidget {
                           backgroundColor: Colors.white,
                           child: Icon(
                             Icons.shopping_cart_rounded,
-                            color: Color.fromARGB(255, 47, 130, 127),
+                            color: Colors.black,
                           ),
                         ),
                         Divider(indent: 10),
@@ -255,7 +262,7 @@ class Home extends StatelessWidget {
                           backgroundColor: Colors.white,
                           child: Icon(
                             Icons.notification_add,
-                            color: Color.fromARGB(255, 47, 130, 127),
+                            color: Colors.black,
                           ),
                         ),
                       ],
@@ -303,7 +310,7 @@ class Home extends StatelessWidget {
             prefixIcon: Icon(Icons.search_off_outlined),
             suffixIcon: Icon(
               Icons.mic_outlined,
-              color: Colors.green,
+              color: Colors.black,
             ),
           ),
         ),

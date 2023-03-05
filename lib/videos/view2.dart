@@ -15,7 +15,8 @@ class View2 extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 7, vertical: 5),
       margin: EdgeInsets.only(right: 7, top: 5),
       decoration: BoxDecoration(
-          color: Colors.transparent, borderRadius: BorderRadius.circular(25)),
+          color: Color.fromARGB(233, 247, 196, 237),
+          borderRadius: BorderRadius.circular(25)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
