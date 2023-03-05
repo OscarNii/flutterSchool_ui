@@ -16,8 +16,8 @@ class View1 extends StatelessWidget {
       margin: EdgeInsets.only(right: 7, top: 5),
       decoration: BoxDecoration(
           gradient: LinearGradient(colors: [
-            Color.fromARGB(172, 0, 0, 0),
-            Color.fromARGB(148, 47, 130, 127),
+            Color.fromARGB(126, 0, 0, 0),
+            Color.fromARGB(124, 47, 130, 127),
           ]),
           borderRadius: BorderRadius.circular(25)),
       child: Column(

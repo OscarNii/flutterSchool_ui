@@ -103,6 +103,8 @@ class Home extends StatelessWidget {
                 View2(),
                 SizedBox(height: 10),
                 View1(),
+                SizedBox(height: 10),
+                View2(),
               ],
             ),
           ),
