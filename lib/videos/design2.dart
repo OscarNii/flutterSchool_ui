@@ -30,10 +30,9 @@ class Designss2 extends StatelessWidget {
             fontSize: 15,
             fontWeight: FontWeight.bold,
           ),
-          primary: Color.fromARGB(211, 244, 240, 240),
-          onPrimary: Color.fromARGB(255, 47, 130, 127),
+          backgroundColor: Colors.white,
 
-          shadowColor: Colors.grey,
+          shadowColor: Colors.white,
           side: BorderSide(color: Color.fromARGB(255, 47, 130, 127), width: 2),
           shape: StadiumBorder(),
           //alignment: Alignment.center

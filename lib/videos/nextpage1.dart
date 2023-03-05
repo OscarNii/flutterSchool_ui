@@ -48,7 +48,7 @@ class _Nextpage1State extends State<Nextpage1> {
                         fontSize: 19,
                       ),
                     ),
-                    SizedBox(width: 210),
+                    SizedBox(width: 190),
                     Text(
                       'View all',
                       style: TextStyle(
@@ -136,7 +136,7 @@ class _Nextpage1State extends State<Nextpage1> {
                                   'App Developer',
                                   style: TextStyle(color: Colors.grey),
                                 ),
-                                SizedBox(width: 20),
+                                SizedBox(width: 10),
                                 Padding(
                                   padding: const EdgeInsets.only(left: 100.0),
                                   child: Stack(
@@ -163,10 +163,7 @@ class _Nextpage1State extends State<Nextpage1> {
                                           textStyle: TextStyle(
                                             fontSize: 18,
                                           ),
-                                          primary: Color.fromARGB(
-                                              211, 244, 240, 240),
-                                          onPrimary:
-                                              Color.fromARGB(255, 47, 130, 127),
+                                          backgroundColor: Colors.white,
 
                                           shadowColor: Colors.grey,
                                           side: BorderSide(

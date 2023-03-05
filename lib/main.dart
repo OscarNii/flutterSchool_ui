@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData(brightness: Brightness.dark),
       theme: ThemeData(brightness: Brightness.light),
       themeMode: ThemeMode.light,
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: true,
       home: Home(),
     );
   }
@@ -57,7 +57,7 @@ class Home extends StatelessWidget {
                           fontSize: 19,
                         ),
                       ),
-                      SizedBox(width: 210),
+                      SizedBox(width: 180),
                       Text(
                         'View all',
                         style: TextStyle(
@@ -240,7 +240,7 @@ class Home extends StatelessWidget {
                       backgroundImage: AssetImage("assets/11.JPG"),
                       backgroundColor: Colors.transparent,
                     ),
-                    SizedBox(width: 250),
+                    SizedBox(width: 210),
                     Row(
                       children: [
                         CircleAvatar(
