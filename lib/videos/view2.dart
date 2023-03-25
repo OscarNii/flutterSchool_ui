@@ -15,7 +15,7 @@ class View2 extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 7, vertical: 5),
       margin: EdgeInsets.only(right: 7, top: 5),
       decoration: BoxDecoration(
-          color: Color.fromARGB(233, 247, 196, 237),
+          color: Color.fromARGB(55, 0, 0, 0),
           borderRadius: BorderRadius.circular(25)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -38,20 +38,20 @@ class View2 extends StatelessWidget {
                     child: Row(
                       children: [
                         Text(
-                          ' 10 Videos',
+                          ' 11 Videos',
                           style: TextStyle(color: Colors.black),
                         ),
                       ],
                     ),
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
+                      foregroundColor: Colors.black,
+                      backgroundColor: Color.fromARGB(211, 244, 240, 240),
                       padding: EdgeInsets.all(15.0),
                       fixedSize: Size(130, 50),
                       textStyle: TextStyle(
                         fontSize: 18,
                       ),
-                      primary: Color.fromARGB(211, 244, 240, 240),
-                      onPrimary: Color.fromARGB(255, 47, 130, 127),
 
                       shadowColor: Colors.grey,
                       side: BorderSide(color: Colors.white, width: 2),
@@ -121,17 +121,16 @@ class View2 extends StatelessWidget {
                       ),
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
+                        foregroundColor: Colors.black,
                         padding: EdgeInsets.symmetric(horizontal: 10.0),
+                        backgroundColor: Color.fromARGB(211, 244, 240, 240),
                         fixedSize: Size(80, 40),
                         textStyle: TextStyle(
                           fontSize: 18,
                         ),
-                        primary: Color.fromARGB(211, 244, 240, 240),
-                        onPrimary: Color.fromARGB(255, 47, 130, 127),
 
                         shadowColor: Colors.grey,
-                        side: BorderSide(
-                            color: Color.fromARGB(255, 47, 130, 127), width: 2),
+                        side: BorderSide(color: Colors.black, width: 2),
                         shape: StadiumBorder(),
                         //alignment: Alignment.center
                       ),

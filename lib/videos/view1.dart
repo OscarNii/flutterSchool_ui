@@ -17,6 +17,10 @@ class View1 extends StatelessWidget {
       margin: EdgeInsets.only(right: 7, top: 5),
       decoration: BoxDecoration(
           color: Color.fromARGB(233, 247, 196, 237),
+          gradient: LinearGradient(colors: [
+            Color.fromARGB(126, 0, 0, 0),
+            Colors.black,
+          ]),
           borderRadius: BorderRadius.circular(25)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -46,19 +50,20 @@ class View1 extends StatelessWidget {
                       ),
                       onPressed: () {
                         Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => Nextpage1(),
-                            ));
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Nextpage1(),
+                          ),
+                        );
                       },
                       style: ElevatedButton.styleFrom(
+                        foregroundColor: Color.fromARGB(255, 47, 130, 127),
+                        backgroundColor: Color.fromARGB(211, 244, 240, 240),
                         padding: EdgeInsets.all(15.0),
                         fixedSize: Size(130, 50),
                         textStyle: TextStyle(
                           fontSize: 18,
                         ),
-                        primary: Color.fromARGB(211, 244, 240, 240),
-                        onPrimary: Color.fromARGB(255, 47, 130, 127),
 
                         shadowColor: Colors.grey,
                         side: BorderSide(color: Colors.white, width: 2),
@@ -73,12 +78,12 @@ class View1 extends StatelessWidget {
           ),
           SizedBox(height: 10),
           Text(
-            'Affrodance: Designing intutive',
-            style: TextStyle(fontSize: 17),
+            'Affordance: Designing intuitive',
+            style: TextStyle(color: Colors.white, fontSize: 17),
           ),
           Text(
             'user interface.',
-            style: TextStyle(fontSize: 17),
+            style: TextStyle(color: Colors.white, fontSize: 17),
           ),
           SizedBox(height: 10),
           Row(
@@ -90,9 +95,7 @@ class View1 extends StatelessWidget {
               ),
               Text(
                 'Created by Belmont Owen',
-                style: TextStyle(
-                  fontSize: 17,
-                ),
+                style: TextStyle(fontSize: 17, color: Colors.white),
               ),
             ],
           ),
@@ -102,13 +105,19 @@ class View1 extends StatelessWidget {
               Text(
                 NumberFormat.simpleCurrency(locale: 'en-us', decimalDigits: 2)
                     .format(150.00),
-                style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 17,
+                    fontWeight: FontWeight.bold),
               ),
               SizedBox(width: 15),
               Text(
                 NumberFormat.simpleCurrency(locale: 'en-us', decimalDigits: 2)
                     .format(150.00),
-                style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal),
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 14,
+                    fontWeight: FontWeight.normal),
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 70.0),

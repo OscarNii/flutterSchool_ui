@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "262809061799",
+    "project_id": "schoolfresh",
+    "storage_bucket": "schoolfresh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262809061799:android:b2f711582fc34e9ec04e82",
+        "android_client_info": {
+          "package_name": "com.example.school_ui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "262809061799-hgehueoqmjm48abn8vpeik98vh67h1r2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-fMcy14gQeeqJ1ruFFEx6LIEAFqGp_Lo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "262809061799-hgehueoqmjm48abn8vpeik98vh67h1r2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

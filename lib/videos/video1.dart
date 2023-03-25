@@ -39,13 +39,13 @@ class Video1 extends StatelessWidget {
                     ),
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
+                      foregroundColor: Colors.black,
+                      backgroundColor: Color.fromARGB(211, 244, 240, 240),
                       padding: EdgeInsets.all(15.0),
                       fixedSize: Size(130, 50),
                       textStyle: TextStyle(
                         fontSize: 18,
                       ),
-                      primary: Color.fromARGB(211, 244, 240, 240),
-                      onPrimary: Color.fromARGB(255, 47, 130, 127),
 
                       shadowColor: Colors.grey,
                       side: BorderSide(color: Colors.white, width: 2),

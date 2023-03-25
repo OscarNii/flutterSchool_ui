@@ -1,8 +1,12 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:animate_do/animate_do.dart';
+import 'package:animated_splash_screen/animated_splash_screen.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
+import 'package:school_ui/login.dart';
+import 'package:school_ui/splash_screen.dart';
 import 'package:school_ui/videos/course1.dart';
 import 'package:school_ui/videos/course2.dart';
 import 'package:school_ui/videos/design1.dart';
@@ -11,7 +15,10 @@ import 'package:school_ui/videos/design3.dart';
 import 'package:school_ui/videos/view1.dart';
 import 'package:school_ui/videos/view2.dart';
 
+import 'package:page_transition/page_transition.dart';
+
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(
     const MyApp(),
   );
@@ -23,11 +30,20 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      darkTheme: ThemeData(brightness: Brightness.dark),
+      darkTheme: ThemeData(brightness: Brightness.light),
       theme: ThemeData(brightness: Brightness.light),
       themeMode: ThemeMode.light,
       debugShowCheckedModeBanner: true,
-      home: Home(),
+      home: AnimatedSplashScreen(
+        splashTransition: SplashTransition.fadeTransition,
+        pageTransitionType: PageTransitionType.leftToRightWithFade,
+        splashIconSize: 300,
+        backgroundColor: Colors.black,
+        nextScreen: Page3(),
+        splash: Center(
+          child: Image.asset("assets/Logo.png"),
+        ),
+      ),
     );
   }
 }
@@ -98,24 +114,21 @@ class Home extends StatelessWidget {
           SizedBox(height: 10),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
-            child: FadeInUpBig(
-              animate: true,
-              child: Row(
-                children: [
-                  View1(),
-                  SizedBox(height: 10),
-                  View2(),
-                  SizedBox(height: 10),
-                  View1(),
-                  SizedBox(height: 10),
-                  View2(),
-                ],
-              ),
+            child: Row(
+              children: [
+                View1(),
+                SizedBox(height: 10),
+                View2(),
+                SizedBox(height: 10),
+                View1(),
+                SizedBox(height: 10),
+                View2(),
+              ],
             ),
           ),
-          SizedBox(height: 5),
+          SizedBox(height: 10),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10.0),
+            padding: const EdgeInsets.symmetric(horizontal: 2.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -124,7 +137,7 @@ class Home extends StatelessWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Colors.black,
-                    fontSize: 19,
+                    fontSize: 13,
                   ),
                 ),
                 SizedBox(width: 100),
@@ -223,7 +236,7 @@ class Home extends StatelessWidget {
       gradient: LinearGradient(
         colors: [
           Colors.white,
-          Color.fromARGB(149, 255, 2, 204),
+          Colors.black,
         ],
         begin: Alignment.topCenter,
         end: Alignment.bottomCenter,
@@ -244,7 +257,7 @@ class Home extends StatelessWidget {
                   children: [
                     CircleAvatar(
                       radius: 32,
-                      backgroundImage: AssetImage("assets/11.JPG"),
+                      backgroundImage: AssetImage("assets/11-min.JPG"),
                       backgroundColor: Colors.transparent,
                     ),
                     SizedBox(width: 210),
