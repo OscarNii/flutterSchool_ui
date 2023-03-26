@@ -2,7 +2,6 @@ import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:school_ui/login.dart';
-import 'package:school_ui/main.dart';
 
 void main() => runApp(const MyApp());
 

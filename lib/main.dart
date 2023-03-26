@@ -1,12 +1,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'package:animate_do/animate_do.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:school_ui/login.dart';
-import 'package:school_ui/splash_screen.dart';
 import 'package:school_ui/videos/course1.dart';
 import 'package:school_ui/videos/course2.dart';
 import 'package:school_ui/videos/design1.dart';

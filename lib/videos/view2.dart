@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, unused_import
 
+import 'package:animate_do/animate_do.dart';
 import 'package:awesome_icons/awesome_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
@@ -20,46 +21,48 @@ class View2 extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Container(
-            height: 250,
-            width: 300,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(14),
-              image: DecorationImage(
-                  image: AssetImage('assets/card-residents.jpg'),
-                  fit: BoxFit.cover),
-            ),
-            child: Padding(
-              padding: const EdgeInsets.all(10.0),
-              child: Stack(
-                alignment: Alignment.bottomLeft,
-                children: [
-                  ElevatedButton(
-                    child: Row(
-                      children: [
-                        Text(
-                          ' 11 Videos',
-                          style: TextStyle(color: Colors.black),
-                        ),
-                      ],
-                    ),
-                    onPressed: () {},
-                    style: ElevatedButton.styleFrom(
-                      foregroundColor: Colors.black,
-                      backgroundColor: Color.fromARGB(211, 244, 240, 240),
-                      padding: EdgeInsets.all(15.0),
-                      fixedSize: Size(130, 50),
-                      textStyle: TextStyle(
-                        fontSize: 18,
+          FadeInUp(
+            child: Container(
+              height: 250,
+              width: 300,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(14),
+                image: DecorationImage(
+                    image: AssetImage('assets/card-residents.jpg'),
+                    fit: BoxFit.cover),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Stack(
+                  alignment: Alignment.bottomLeft,
+                  children: [
+                    ElevatedButton(
+                      child: Row(
+                        children: [
+                          Text(
+                            ' 11 Videos',
+                            style: TextStyle(color: Colors.black),
+                          ),
+                        ],
                       ),
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        foregroundColor: Colors.black,
+                        backgroundColor: Color.fromARGB(211, 244, 240, 240),
+                        padding: EdgeInsets.all(15.0),
+                        fixedSize: Size(130, 50),
+                        textStyle: TextStyle(
+                          fontSize: 18,
+                        ),
 
-                      shadowColor: Colors.grey,
-                      side: BorderSide(color: Colors.white, width: 2),
-                      shape: StadiumBorder(),
-                      //alignment: Alignment.center
-                    ),
-                  )
-                ],
+                        shadowColor: Colors.grey,
+                        side: BorderSide(color: Colors.white, width: 2),
+                        shape: StadiumBorder(),
+                        //alignment: Alignment.center
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
           ),

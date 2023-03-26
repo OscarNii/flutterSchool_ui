@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:school_ui/videos/nextpage1.dart';
 import 'package:animate_do/animate_do.dart';
+import 'package:school_ui/videos/nextpage2.dart';
 
 class View1 extends StatelessWidget {
   const View1({Key? key}) : super(key: key);
