@@ -1,34 +1,41 @@
 {
   "project_info": {
-    "project_number": "262809061799",
-    "project_id": "schoolfresh",
-    "storage_bucket": "schoolfresh.appspot.com"
+    "project_number": "257257510553",
+    "project_id": "school-lookup-33159",
+    "storage_bucket": "school-lookup-33159.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:262809061799:android:b2f711582fc34e9ec04e82",
+        "mobilesdk_app_id": "1:257257510553:android:b2f3956651a8ea7ee98a08",
         "android_client_info": {
           "package_name": "com.example.school_ui"
         }
       },
       "oauth_client": [
         {
-          "client_id": "262809061799-hgehueoqmjm48abn8vpeik98vh67h1r2.apps.googleusercontent.com",
+          "client_id": "257257510553-09o9bsl38paonnn540q60fnkuve4ef4l.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC-fMcy14gQeeqJ1ruFFEx6LIEAFqGp_Lo"
+          "current_key": "AIzaSyCfVpUidRtwu0krsGBSmgRvgJuFvye2eyM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "262809061799-hgehueoqmjm48abn8vpeik98vh67h1r2.apps.googleusercontent.com",
+              "client_id": "257257510553-09o9bsl38paonnn540q60fnkuve4ef4l.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "257257510553-flqd5l5ea64n1crg8i2sti7rqjknbu8m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.schoolUi"
+              }
             }
           ]
         }
