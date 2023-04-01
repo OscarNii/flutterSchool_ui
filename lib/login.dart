@@ -65,207 +65,202 @@ class _Page3State extends State<Page3> {
                       options: DefaultFirebaseOptions.currentPlatform,
                     ),
                     builder: (context, snapshot) {
-                      return SingleChildScrollView(
-                        physics: AlwaysScrollableScrollPhysics(),
-                        child: Center(
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              SizedBox(height: 12),
-                              Text(
-                                'Ozford School',
-                                style: TextStyle(
-                                  fontFamily: 'Lobster',
-                                  fontSize: 70,
-                                  color: Colors.white,
-                                  shadows: <Shadow>[
-                                    Shadow(
-                                      offset: Offset(2.0, 2.0),
-                                      blurRadius: 20.0,
-                                      color: Colors.red,
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              SizedBox(height: 15),
-                              Text(
-                                'Welcome back, you\'ve been missed',
-                                style: TextStyle(
-                                  fontSize: 18,
-                                  color: Colors.white,
-                                  shadows: <Shadow>[
-                                    Shadow(
-                                      offset: Offset(2.0, 2.0),
-                                      blurRadius: 3.0,
-                                      color: Colors.black87,
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              SizedBox(height: 50),
-                              Padding(
-                                padding: const EdgeInsets.symmetric(
-                                    horizontal: 25.0),
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.black38,
-                                    border: Border.all(
-                                      color: Colors.white,
-                                    ),
-                                    borderRadius: BorderRadius.circular(14),
+                      return Center(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            SizedBox(height: 12),
+                            Text(
+                              'Ozford School',
+                              style: TextStyle(
+                                fontFamily: 'Lobster',
+                                fontSize: 65,
+                                color: Colors.white,
+                                shadows: <Shadow>[
+                                  Shadow(
+                                    offset: Offset(2.0, 2.0),
+                                    blurRadius: 20.0,
+                                    color: Colors.red,
                                   ),
-                                  child: Padding(
-                                    padding: const EdgeInsets.only(left: 20.0),
-                                    child: TextField(
-                                      style: TextStyle(color: Colors.white),
-                                      cursorColor: Colors.red,
-                                      keyboardType: TextInputType.emailAddress,
-                                      autocorrect: false,
-                                      enableSuggestions: false,
-                                      controller: _email,
-                                      decoration: InputDecoration(
-                                        border: InputBorder.none,
-                                        hintText: 'Email or Username',
-                                        hintStyle: TextStyle(
-                                            fontSize: 17.0,
-                                            color: Colors.white),
-                                        prefixIcon: Icon(
-                                          Icons.email_rounded,
-                                          color: Colors.white,
-                                        ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(height: 15),
+                            Text(
+                              'Welcome back, you\'ve been missed',
+                              style: TextStyle(
+                                fontSize: 18,
+                                color: Colors.white,
+                                shadows: <Shadow>[
+                                  Shadow(
+                                    offset: Offset(2.0, 2.0),
+                                    blurRadius: 3.0,
+                                    color: Colors.black87,
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(height: 50),
+                            Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 25.0),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.black38,
+                                  border: Border.all(
+                                    color: Colors.white,
+                                  ),
+                                  borderRadius: BorderRadius.circular(14),
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.only(left: 20.0),
+                                  child: TextField(
+                                    style: TextStyle(color: Colors.white),
+                                    cursorColor: Colors.red,
+                                    keyboardType: TextInputType.emailAddress,
+                                    autocorrect: false,
+                                    enableSuggestions: false,
+                                    controller: _email,
+                                    decoration: InputDecoration(
+                                      border: InputBorder.none,
+                                      hintText: 'Email or Username',
+                                      hintStyle: TextStyle(
+                                          fontSize: 17.0, color: Colors.white),
+                                      prefixIcon: Icon(
+                                        Icons.email_rounded,
+                                        color: Colors.white,
                                       ),
                                     ),
                                   ),
                                 ),
                               ),
-                              SizedBox(height: 20),
-                              Padding(
-                                padding: const EdgeInsets.symmetric(
-                                    horizontal: 25.0),
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.black38,
-                                    border: Border.all(
-                                      color: Colors.white,
-                                    ),
-                                    borderRadius: BorderRadius.circular(14),
+                            ),
+                            SizedBox(height: 20),
+                            Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 25.0),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.black38,
+                                  border: Border.all(
+                                    color: Colors.white,
                                   ),
-                                  child: Padding(
-                                    padding: const EdgeInsets.only(left: 20.0),
-                                    child: TextField(
-                                      style: TextStyle(color: Colors.white),
-                                      controller: _password,
-                                      obscureText: true,
-                                      enableSuggestions: false,
-                                      autocorrect: false,
-                                      decoration: InputDecoration(
-                                          border: InputBorder.none,
-                                          hintText: 'Enter Password',
-                                          hintStyle: TextStyle(
-                                            fontSize: 17.0,
-                                            color: Colors.white,
-                                          ),
-                                          prefixIcon: Icon(
-                                            Icons.password_rounded,
-                                            color: Colors.white,
-                                          )),
-                                    ),
+                                  borderRadius: BorderRadius.circular(14),
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.only(left: 20.0),
+                                  child: TextField(
+                                    style: TextStyle(color: Colors.white),
+                                    controller: _password,
+                                    obscureText: true,
+                                    enableSuggestions: false,
+                                    autocorrect: false,
+                                    decoration: InputDecoration(
+                                        border: InputBorder.none,
+                                        hintText: 'Enter Password',
+                                        hintStyle: TextStyle(
+                                          fontSize: 17.0,
+                                          color: Colors.white,
+                                        ),
+                                        prefixIcon: Icon(
+                                          Icons.password_rounded,
+                                          color: Colors.white,
+                                        )),
                                   ),
                                 ),
                               ),
-                              SizedBox(height: 20),
-                              Padding(
-                                padding: const EdgeInsets.symmetric(
-                                    horizontal: 25.0),
-                                child: ElevatedButton(
+                            ),
+                            SizedBox(height: 20),
+                            Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 25.0),
+                              child: ElevatedButton(
+                                style: ElevatedButton.styleFrom(
+                                  foregroundColor: Colors.white,
+                                  backgroundColor: Color.fromARGB(45, 0, 0, 0),
+                                  padding: EdgeInsets.symmetric(
+                                      horizontal: 40, vertical: 20),
+                                  textStyle: TextStyle(fontSize: 20),
+                                  side: BorderSide(
+                                      style: BorderStyle.solid,
+                                      width: 2,
+                                      color: Colors.white),
+                                ),
+                                onPressed: () async {},
+                                child: Text(
+                                  'Sign In',
+                                ),
+                              ),
+                            ),
+                            SizedBox(height: 15),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                ElevatedButton(
                                   style: ElevatedButton.styleFrom(
                                     foregroundColor: Colors.white,
                                     backgroundColor:
-                                        Color.fromARGB(45, 0, 0, 0),
+                                        Color.fromARGB(231, 244, 54, 54),
                                     padding: EdgeInsets.symmetric(
-                                        horizontal: 40, vertical: 20),
-                                    textStyle: TextStyle(fontSize: 20),
+                                        horizontal: 10, vertical: 10),
+                                    textStyle: TextStyle(fontSize: 15),
                                     side: BorderSide(
                                         style: BorderStyle.solid,
                                         width: 2,
                                         color: Colors.white),
                                   ),
-                                  onPressed: () async {},
-                                  child: Text(
-                                    'Sign In',
-                                  ),
-                                ),
-                              ),
-                              SizedBox(height: 15),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  ElevatedButton(
-                                    style: ElevatedButton.styleFrom(
-                                      foregroundColor: Colors.white,
-                                      backgroundColor:
-                                          Color.fromARGB(231, 244, 54, 54),
-                                      padding: EdgeInsets.symmetric(
-                                          horizontal: 10, vertical: 10),
-                                      textStyle: TextStyle(fontSize: 15),
-                                      side: BorderSide(
-                                          style: BorderStyle.solid,
-                                          width: 2,
-                                          color: Colors.white),
-                                    ),
-                                    onPressed: () {
-                                      Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) => Home(),
-                                        ),
-                                      );
-                                    },
-                                    child: Center(
-                                      child: Text(
-                                        'Get Started',
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
-                                        ),
+                                  onPressed: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => Home(),
                                       ),
-                                    ),
-                                  ),
-                                  SizedBox(width: 15),
-                                  ElevatedButton(
-                                    onPressed: () async {
-                                      final email = _email.text;
-                                      final password = _password.text;
-                                      final userCredential = await FirebaseAuth
-                                          .instance
-                                          .createUserWithEmailAndPassword(
-                                              email: email, password: password);
-                                      print(UserCredential);
-                                    },
-                                    style: ElevatedButton.styleFrom(
-                                      foregroundColor: Colors.white,
-                                      backgroundColor:
-                                          Color.fromARGB(154, 54, 54, 244),
-                                      padding: EdgeInsets.symmetric(
-                                          horizontal: 10, vertical: 10),
-                                      textStyle: TextStyle(fontSize: 15),
-                                      side: BorderSide(
-                                          style: BorderStyle.solid,
-                                          width: 2,
-                                          color: Colors.white),
-                                    ),
+                                    );
+                                  },
+                                  child: Center(
                                     child: Text(
-                                      'Register Now',
+                                      'Get Started',
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
                                   ),
-                                ],
-                              )
-                            ],
-                          ),
+                                ),
+                                SizedBox(width: 15),
+                                ElevatedButton(
+                                  onPressed: () async {
+                                    final email = _email.text;
+                                    final password = _password.text;
+                                    final userCredential = await FirebaseAuth
+                                        .instance
+                                        .createUserWithEmailAndPassword(
+                                            email: email, password: password);
+                                    print(UserCredential);
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    foregroundColor: Colors.white,
+                                    backgroundColor:
+                                        Color.fromARGB(154, 54, 54, 244),
+                                    padding: EdgeInsets.symmetric(
+                                        horizontal: 10, vertical: 10),
+                                    textStyle: TextStyle(fontSize: 15),
+                                    side: BorderSide(
+                                        style: BorderStyle.solid,
+                                        width: 2,
+                                        color: Colors.white),
+                                  ),
+                                  child: Text(
+                                    'Register Now',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            )
+                          ],
                         ),
                       );
                     },

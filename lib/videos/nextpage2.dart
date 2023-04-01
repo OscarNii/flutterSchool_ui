@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:swipe_deck/swipe_deck.dart';
 
 // ignore: constant_identifier_names
-const IMAGES = ["1", "4", "5", "6"];
+const IMAGES = ["js", "flutter", "andriod", "phyton", "swift"];
 
 class Nextpage2 extends StatelessWidget {
   const Nextpage2({Key? key}) : super(key: key);
@@ -13,9 +13,16 @@ class Nextpage2 extends StatelessWidget {
         appBar: AppBar(
           title: const Text("swipe tutorials"),
         ),
-        body: SwipeDeck(
+        body: Center(
+          child: SwipeDeck(
+            aspectRatio: 1.5,
             widgets: IMAGES
-                .map((e) => Image.asset("assets/images/$e.png"))
-                .toList()));
+                .map((e) => Image.asset(
+                      "assets/$e.jpeg",
+                      fit: BoxFit.fill,
+                    ))
+                .toList(),
+          ),
+        ));
   }
 }

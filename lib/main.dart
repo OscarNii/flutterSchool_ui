@@ -176,6 +176,14 @@ class Home extends StatelessWidget {
         rippleColor: Colors.red,
         tabs: [
           GButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Home(),
+                ),
+              );
+            },
             icon: Icons.home,
             text: 'Home',
             textColor: Colors.black,
@@ -200,6 +208,7 @@ class Home extends StatelessWidget {
             iconColor: Colors.black,
           ),
           GButton(
+            onPressed: () {},
             icon: Icons.person,
             text: 'Profile',
             textColor: Colors.black,

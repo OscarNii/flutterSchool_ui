@@ -5,6 +5,7 @@ import 'package:intl/intl.dart';
 import 'package:school_ui/videos/nextpage1.dart';
 import 'package:animate_do/animate_do.dart';
 import 'package:school_ui/videos/nextpage2.dart';
+import 'package:school_ui/videos/swipe.dart';
 
 class View1 extends StatelessWidget {
   const View1({Key? key}) : super(key: key);
@@ -18,10 +19,12 @@ class View1 extends StatelessWidget {
       margin: EdgeInsets.only(right: 7, top: 5),
       decoration: BoxDecoration(
           color: Color.fromARGB(233, 247, 196, 237),
-          gradient: LinearGradient(colors: [
-            Color.fromARGB(126, 0, 0, 0),
-            Colors.black,
-          ]),
+          gradient: LinearGradient(
+            colors: [
+              Color.fromARGB(126, 0, 0, 0),
+              Colors.black,
+            ],
+          ),
           borderRadius: BorderRadius.circular(25)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -33,7 +36,7 @@ class View1 extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(14),
                 image: DecorationImage(
-                    image: AssetImage('assets/2.jpeg'), fit: BoxFit.fill),
+                    image: AssetImage('assets/college.jpg'), fit: BoxFit.cover),
               ),
               child: Padding(
                 padding: const EdgeInsets.all(10.0),
